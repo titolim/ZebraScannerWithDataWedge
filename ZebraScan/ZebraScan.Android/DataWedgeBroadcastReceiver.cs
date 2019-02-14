@@ -9,6 +9,7 @@ using Android.OS;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
+using Xamarin.Forms;
 
 namespace ZebraScannerWithDataWedge.Droid
 {
@@ -20,6 +21,8 @@ namespace ZebraScannerWithDataWedge.Droid
     {
       string labelType = intent.GetStringExtra(MainActivity.DataWedgeLabelType);
       string data = intent.GetStringExtra(MainActivity.DataWedgeDataString);
+
+      MessagingCenter.Send<MainPage, BarCode>(App.Current.MainPage as MainPage, "ZebraScan", new BarCode(labelType, data));
     }
   }
 }

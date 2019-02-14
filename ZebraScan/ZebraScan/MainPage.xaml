@@ -4,11 +4,33 @@
              xmlns:local="clr-namespace:ZebraScannerWithDataWedge"
              x:Class="ZebraScannerWithDataWedge.MainPage">
 
-    <StackLayout>
-        <!-- Place new controls here -->
-        <Label Text="Zebra Scanner With DataWedge Demo!" 
+  <StackLayout Padding="5">
+    <!-- Place new controls here -->
+    <Label Text="{Binding AppTitle}" 
+           FontSize="Medium"
+           FontAttributes="Bold"
            HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
-    </StackLayout>
+           VerticalOptions="Start" />
+
+    <ListView ItemsSource="{Binding ScannedCodes}"
+              IsPullToRefreshEnabled="True" RefreshCommand="{Binding ClearCommand}" IsRefreshing="{Binding IsRefreshing}" 
+              HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+      <ListView.ItemTemplate>
+        <DataTemplate>
+          <ViewCell>
+            <StackLayout>
+              <StackLayout Orientation="Horizontal">
+                <Label Text="{Binding Type}"></Label>
+                <Label Text="{Binding Data}"></Label>
+              </StackLayout>
+              <Label Text="{Binding ScanTime}" FontSize="Micro"></Label>
+            </StackLayout>
+          </ViewCell>
+        </DataTemplate>
+      </ListView.ItemTemplate>
+    </ListView>
+
+    <Button Text="Clear" Command="{Binding ClearCommand}" WidthRequest="400" HorizontalOptions="CenterAndExpand" VerticalOptions="End" />
+  </StackLayout>
 
 </ContentPage>

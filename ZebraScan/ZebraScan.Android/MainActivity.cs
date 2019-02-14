@@ -10,7 +10,7 @@ using Android.Content;
 
 namespace ZebraScannerWithDataWedge.Droid
 {
-  [Activity(Label = "ZebraScannerWithDataWedge", Icon = "@mipmap/icon", Theme = "@style/MainTheme", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
+  [Activity(Theme = "@style/MainTheme", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
   public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsAppCompatActivity
   {
     public const string IntentFilterName = "com.titolim.ZebraScannerWithDataWedge";
