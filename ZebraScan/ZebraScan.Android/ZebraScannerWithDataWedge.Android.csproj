@@ -30,6 +30,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <AndroidLinkMode>None</AndroidLinkMode>
+    <AotAssemblies>false</AotAssemblies>
+    <EnableLLVM>false</EnableLLVM>
+    <BundleAssemblies>false</BundleAssemblies>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -94,8 +97,8 @@
     <Folder Include="Resources\drawable\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ZebraScannerWithDataWedge\ZebraScannerWithDataWedge.csproj">
-      <Project>{EBDC6B39-FEDD-4951-8EBD-663328BF3AC8}</Project>
+    <ProjectReference Include="..\ZebraScan\ZebraScannerWithDataWedge.csproj">
+      <Project>{4f6a7e73-2816-4942-a26b-b7f783a774c6}</Project>
       <Name>ZebraScannerWithDataWedge</Name>
     </ProjectReference>
   </ItemGroup>

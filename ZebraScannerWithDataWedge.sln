@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.102
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZebraScannerWithDataWedge.Android", "ZebraScannerWithDataWedge\ZebraScannerWithDataWedge.Android\ZebraScannerWithDataWedge.Android.csproj", "{7CA9C808-50EE-459A-84E6-F1D1C4CAA4A5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZebraScannerWithDataWedge", "ZebraScan\ZebraScan\ZebraScannerWithDataWedge.csproj", "{4F6A7E73-2816-4942-A26B-B7F783A774C6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZebraScannerWithDataWedge", "ZebraScannerWithDataWedge\ZebraScannerWithDataWedge\ZebraScannerWithDataWedge.csproj", "{E2CDD9C9-B4D1-4407-8031-09F5E182105A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZebraScannerWithDataWedge.Android", "ZebraScan\ZebraScan.Android\ZebraScannerWithDataWedge.Android.csproj", "{7CA9C808-50EE-459A-84E6-F1D1C4CAA4A5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,18 +13,16 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4F6A7E73-2816-4942-A26B-B7F783A774C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F6A7E73-2816-4942-A26B-B7F783A774C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F6A7E73-2816-4942-A26B-B7F783A774C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F6A7E73-2816-4942-A26B-B7F783A774C6}.Release|Any CPU.Build.0 = Release|Any CPU
 		{7CA9C808-50EE-459A-84E6-F1D1C4CAA4A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{7CA9C808-50EE-459A-84E6-F1D1C4CAA4A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7CA9C808-50EE-459A-84E6-F1D1C4CAA4A5}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
 		{7CA9C808-50EE-459A-84E6-F1D1C4CAA4A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7CA9C808-50EE-459A-84E6-F1D1C4CAA4A5}.Release|Any CPU.Build.0 = Release|Any CPU
 		{7CA9C808-50EE-459A-84E6-F1D1C4CAA4A5}.Release|Any CPU.Deploy.0 = Release|Any CPU
-		{E2CDD9C9-B4D1-4407-8031-09F5E182105A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E2CDD9C9-B4D1-4407-8031-09F5E182105A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E2CDD9C9-B4D1-4407-8031-09F5E182105A}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
-		{E2CDD9C9-B4D1-4407-8031-09F5E182105A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E2CDD9C9-B4D1-4407-8031-09F5E182105A}.Release|Any CPU.Build.0 = Release|Any CPU
-		{E2CDD9C9-B4D1-4407-8031-09F5E182105A}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
